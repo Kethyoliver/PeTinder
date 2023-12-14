@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="assets/imagens/logo1.png" rel = "shortcut icon"> <!-- Este comando coloca um icone na parte de cima da página-->
+    <title>Petinder - Interesses</title>
+
+    <script>
+        var win = null;
+        function POP_Oferta(){
+            pagina = "promocao.html"
+            var left = (window.innerWidth-400)/2;
+            var top = (window.innerHeight-400)/2;
+            settings = 'toolbar = no , location = no , directories = no , status = no , menubar = no, width = 400 , height = 400, left='+left+', top='+top+', scrollbars = no, resizable = no, copyhistory = yes';
+            win = window.open( pagina, "ACESSE AGORA MESMO!", settings);
+        }
+
+        function Novidade(){
+            pagina="Novidade.html"
+            var left = (window.innerWidth-820)/2;
+            var top = (window.innerHeight-620)/2;
+            settings = 'toolbar=no , location=no , directories=no , status=no , menubar=no, width=820 , height=620, left='+left+', top='+top+', scrollbars=no, resizable=no, copyhistory=yes';
+            win = window.open(pagina,"Novidade", settings);
+        }
+    </script>
+</head>
+
+<body onLoad = "JavaScript: POP_Oferta();">
+    <header>
+        <div class="logo_caixa">         
+            <img src="assets/imagens/logo.png" title="Amor aos pets" class="logo"/>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Tutores</a></li>
+                    <li><a href="">Pets</a></li>
+                    <li><a href="">Canis</a></li>
+                    <li><a href="interesses.html">Interesses</a></li>
+                    <li><a href="">Parceiros</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+    
+    <!-- Conteúdo do corpo da página-->
+    <main>
+        <!--Grupos de Interesses-->
+        <Section class="Interesses"><!-- É a parte onde colocaremos o texto, imagens e logotipo se quiser-->
+            <h1 class="titulo-padrao"> Grupos de Interesse</h1>
+            <p> Veja todos os grupos de interesse que a Petinder selecionou para você, fique á vontade para escolher mais de uma opção!</p>
+            
+            <div class="conteudo-interesses">
+                <ul class="lista-interesses">
+                    <li class="item">Passeios<img src="assets/imagens/passeio.png" alt="Passeios em grupo" class="img_interesses"></li>
+                    <li class="item">Cruzamento<img src="assets/imagens/casal.gato.png" alt="Cruzamento"  class="img_interesses"></li>
+                    <li class="item">Encontro aleatório<img src="assets/imagens/aleatorio.png" alt="Encontro aleatório"  class="img_interesses"></li>
+                </ul>
+            </div>
+            <div>
+                <a href="JavaScript: Novidade();"><img src ="assets/imagens/novidades.png" class="novidade_slider"> </a>
+            </div>
+        </Section>  
+    </main>
+
+    <footer>
+        <p class = "copyright">&copy; Copyright - Todos os direitos reservados a Petinder</p>
+    </footer>
+
+</body>
+</html>

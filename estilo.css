@@ -1,0 +1,403 @@
+/*COMENTÁRIO*/ /* Estilização geral do site*/
+
+body{
+    font-family:"Lucida Sans Unicode";
+    margin: 0;
+    padding: 0;
+    border: 0; 
+}
+
+
+/*Estilização do HEADER da página*/
+
+header{
+    background-color: #f1eef5;
+}
+
+
+
+
+/*Estilização do LOGOTIPO*/
+
+.logo{
+    width:8%;
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+
+/* Estilização do MENU*/
+
+nav{
+    right: 15px;
+    position: absolute;
+    top: 90px;   
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 35px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: rgb(172, 133, 74);
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #000000;
+    text-decoration: underline;
+}
+
+.logo_caixa{
+    width: 1300px;
+    position: relative;
+    margin: auto;
+}
+
+nav a:hover{
+    color: #000000;
+    text-decoration: underline;
+
+}
+
+
+
+
+/* Estilização do Banner */
+
+.banner { 
+    width:  100%;
+}
+
+
+
+/* Estilização do Design */
+.design{
+    padding: 4.5rem 0;
+    margin: 0;
+    padding-bottom: 0;
+}
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+.title h2{
+    font-family: var(--Playfair);
+    font-size: 2.4rem;
+    color: rgb(172, 133, 74);
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+    color: rgb(172, 133, 74);
+}
+.design-content{
+    margin: 2rem 0;
+}
+.design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+.design-img{
+    position: relative;
+    overflow: hidden;
+}
+.design-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.design-img img{
+    transition:  all 0.5s ease;
+}
+.design-item:hover img{
+    transform: scale(1.2);
+}
+.design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    background: var(--exDark);
+    color: #a29aaa;
+    padding: 0.25rem 1rem;
+}
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.design-title a{
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+}
+
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        display: block;
+        float: left;
+        margin: 0 10px 10px 0;
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+}
+
+
+/* Estilização da seção sobre a empresa*/
+.logo {
+width: 170px;
+float: left;
+text-align: center;
+}
+.container {
+    text-align: center;
+  }
+  .area.titulo-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .titulo-padrao {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+  .img-escritorio {
+    width: 40%;
+  }
+  .img-estabelecimento {
+    width: 40%;
+  }
+
+/*Títulos - Padrão*/
+
+.titulo-padrao{
+    margin: 0;
+    padding-top: 3%;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(172, 133, 74);
+}
+
+
+/*Estilização da sessão Nosso estabelecimento (mapa)*/
+
+.mapa{
+    background-color: #a29aaa;
+    background: linear-gradient(#FFFFFE, #a29aaa, #a29aaa);
+}
+
+.mapa p{
+    text-align: center;
+    font-weight: bold;
+}
+
+/*.mapa-conteudo{
+    width: 70%;
+    margin: 0 35%;
+}*/
+
+.mapa iframe{
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+/*Estilização da sessão beneficios*/
+
+.beneficios {
+    background-color: #a29aaa;
+}
+.conteudo_beneficios {
+    width: 100%;
+    margin: 0 auto;
+}
+.lista-beneficios {
+    width: 30%;
+    display: inline-block;
+    vertical-align: baseline;
+    list-style: "🐶";
+    padding-left: 0%;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+.itens {
+    line-height: 1.6;
+}
+
+.itens:before {
+    content: "🐱";
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+.img_beneficios {
+    width: 150px;
+    box-shadow: 10px 10px 5px 0px black;
+    opacity: 1;
+    transition: 400ms;
+}
+
+.img_beneficios:hover {
+    opacity: 0.7;
+}
+
+
+.video{
+    background: #a29aaa;
+    padding-bottom: 50px;
+}
+
+.Interesses{
+    padding-top: 130px;
+    font-size: 20px;
+    text-align:center;
+    margin: 0px;
+    background-color: #a29aaa;
+    background: linear-gradient(#FFFFFE, #a29aaa);
+    padding-bottom: 10px;
+}
+
+.conteudo-interesses{
+    width:100%;
+}
+
+.lista-interesses{
+width: 100%;
+
+
+}
+
+
+.item{
+    text-align: center;
+    width: 30%;
+    vertical-align: center;
+    font-size: 22px;
+    list-style: none;
+    display: inline-block;
+    border-style:solid;
+    border-radius: 10%;
+    border-color: rgb(172, 133, 74);
+}
+
+
+@keyframes item
+{
+        0% { font-size: 26px; color:#a29aaa; border-color: #9b510cec;}
+        80% { font-size: 30px; color:#a29aaa; border-color: #9b510cec;}
+        60% { font-size: 34px; color:#a29aaa; border-color: #9b510cec;}
+}
+
+
+.item:hover{
+    
+    -webkit-animation: item .75s linear infinite;
+    -moz-animation: item .75s linear infinite;
+    -ms-animation: item .75s linear infinite;
+    -o-animation: item .75s linear infinite;
+    animation: item .75s linear infinite;
+    }
+
+
+
+.img_interesses{
+    width: 80%;
+    padding-bottom: 0px;
+
+
+ 
+}
+
+@keyframes img_interesses
+{
+        0% { opacity: 1; }
+        80% { opacity: 0.8; }
+        60% { opacity: 0.6; }
+}
+
+.img_interesses:hover {
+    -webkit-animation: img_interesses .75s linear infinite;
+    -moz-animation: img_interesses .75s linear infinite;
+    -ms-animation: img_interesses .75s linear infinite;
+    -o-animation: img_interesses .75s linear infinite;
+    animation: img_interesses .75s linear infinite;
+    
+    
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+
+
+/* Estilização do footer */
+footer{
+    text-align: center;
+    background: url("assets/imagens/rodape.png");
+    padding: 20%;
+}
+
+.copyright{
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.logo_footer{
+    width: 25%;
+}
