@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="js.css">
+        <title>ACESSE AGORA MESMO!</title>
+        <script>
+            function pisca() {
+                var f = document.getElementById('preco_oferta');
+                setInterval(function(){
+                    f.style.visibility = (f.style.visibility == 'hidden' ? '' : 'hidden');}, 150);
+            }
+        </script>
+    </head>
+    <body onload= "pisca();">
+        <div class="oferta">
+            <br>
+            <br>
+            <img src = "assets/imagens/promocao.jpeg" class= "img_oferta">
+            <p class = "texto_oferta">
+                Tenha até 30 dias com <br><br>
+                acesso VIP a consultoria 🐶🐱</p>
+        </div>
+    </body>
+</html>

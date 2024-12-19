@@ -1,0 +1,167 @@
+.container {
+    background-image: url("assets/imagens/amor.png");
+    background-size: cover;
+    width: 800px;
+    height: 500px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.container .effect {
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+}
+
+.informacao_novidades {
+    display: none;
+    color:blanchedalmond;
+    margin-left: 10px;
+    text-align:right;
+}
+
+
+
+.img_oferta {
+    width: 50%;
+    padding-bottom: 10px;
+    -webkit-animation: img_oferta .75s linear infinite;
+    -moz-animation: img_oferta .75s linear infinite;
+    -ms-animation: img_oferta .75s linear infinite;
+    -o-animation: img_oferta .75s linear infinite;
+    animation: img_oferta .75s linear infinite;
+
+
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+@keyframes img_oferta {
+    0% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+
+
+.novidade_slider {
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+@keyframes novidade_slider {
+    0% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.novidade_slider:hover {
+    -webkit-animation: novidade_slider .75s linear infinite;
+    -moz-animation: novidade_slider .75s linear infinite;
+    -ms-animation: novidade_slider .75s linear infinite;
+    -o-animation: novidade_slider .75s linear infinite;
+    animation: novidade_slider .75s linear infinite;
+
+
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.texto_oferta {
+    color: rgb(172, 133, 74);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Estilização do campo RANGE */
+input[type=range] {
+    height: 39px;
+    width: 700px;
+    margin-left: 26px;
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: #A6A6A6;
+    border-radius: 4px;
+    border: 2px solid #3a3a3a;
+    transition: 0.2s; /* Adicionando transição para o efeito de foco */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 2px #A6A6A6;
+    border: 2px solid #3a3a3a;
+    height: 30px;
+    width: 30px;
+    border-radius: 0;
+    background: #A6A6A6;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -11px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #A6A6A6;
+}
+
+/* Estilização para outros navegadores */
+input[type=range]::-moz-range-track,
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    background: #A6A6A6;
+    border-radius: 4px;
+    border: 2px solid #3a3a3a;
+}
+
+input[type=range]::-moz-range-thumb,
+input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 2px #A6A6A6;
+    border: 2px solid #3a3a3a;
+    height: 30px;
+    width: 30px;
+    border-radius: 0;
+    background: #A6A6A6;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-fill-lower,
+input[type=range]::-ms-fill-upper {
+    background: #A6A6A6;
+    border: 2px solid #3a3a3a;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px #A6A6A6;
+}
+
+/* Adicionando efeito de foco para navegadores MS */
+input[type=range]:focus::-ms-fill-lower,
+input[type=range]:focus::-ms-fill-upper {
+    background: #A6A6A6;
+}
